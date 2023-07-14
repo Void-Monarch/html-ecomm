@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css" />
     <title>E-Comm</title>
@@ -34,22 +38,22 @@
               <a class="nav__link" href="#section--3">About Us</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              <a class="nav__link nav__link--btn btn--show-modal" href=""
                 >Create account</a
               >
             </li>
           </ul>
         </nav>
   
-        <div class="header__title">
-          <h1>
+        <div class="header__title" style="font-weight: bold;">
+          <h1 style="font-size: 5rem;" >
             When
             <!-- Green highlight effect -->
-            <span class="highlight">Shopping</span>
+            <span class="highlight" >Shopping</span>
             Made<br />
-            <span class="highlight">easy</span>
+            <span class="highlight" >easy</span>
           </h1>
-          <h4>A simpler Shopping experience for a simpler life.</h4>
+          <h4 style="font-size: 2rem;">A simpler Shopping experience for a simpler life.</h4>
           <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
           <img
             src="assests/shopping-cart-image.png"
@@ -146,38 +150,44 @@
     </div>
 
     <div class="slider">
-      <div class="slide">
-        <div class="testimonial">
-          
-            <img src="assests/-section1_logo.jpg" alt="" class="testimonial__photo" style=" object-fit:contain" />
-        </div>
-      </div>
 
-      <div class="slide">
-        <div class="testimonial">
-          
-            <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
-            
-        </div>
-      </div>
+    <div class="slide"><img src="assests/section1_logo.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>
 
-      <div class="slide">
-        <div class="testimonial">
-          
-            <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
-            
-        </div>
-      </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
 
-      <button class="slider__btn slider__btn--left">&larr;</button>
-      <button class="slider__btn slider__btn--right">&rarr;</button>
-      <div class="dots"></div>
     </div>
   </section>
     
 
 
 
+
+
+
+  <!-- Modal window login -->
+  
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Open your bank account <br />
+      in just <span class="highlight">5 minutes</span>
+    </h2>
+    <form class="modal__form">
+      <label>First Name</label>
+      <input type="text" />
+      <label>Last Name</label>
+      <input type="text" />
+      <label>Email Address</label>
+      <input type="email" />
+      <button class="btn">Next step &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
 
 
 
