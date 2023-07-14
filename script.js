@@ -1,12 +1,35 @@
 'use strict';
-
+ 
 
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
+const section2 = document.querySelector('#section--2');
 const nav = document.querySelector('.nav');
-
-
+const learnmore = document.querySelector('.btn--scroll-to');
 const imgTargets = document.querySelectorAll('img[data-src]');
+const navlinks = document.querySelectorAll('.nav__link');
+
+
+// GOt to scroll functionality
+
+learnmore.addEventListener('click', function(){
+  section2.scrollIntoView()
+});
+
+navlinks.forEach(function(n) {
+  n.addEventListener('click', function(el){
+    el.preventDefault();
+    const id = this.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+
+  });
+
+});
+
+
+
+
+// LAzy Image Loading
 
 const loadImg = function (entries, observer) {
   const [entry] = entries;
