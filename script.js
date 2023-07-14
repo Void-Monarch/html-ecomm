@@ -165,6 +165,8 @@ const slider = function () {
       activateDot(0);
     };
     init();
+
+    setInterval(nextSlide , 3500);
   
     // Event handlers
     btnRight.addEventListener('click', nextSlide);
@@ -183,7 +185,11 @@ const slider = function () {
       }
     });
   };
-  slider();
+
+  slider()
+
+
+
   
 
 
@@ -215,3 +221,4 @@ overlay.addEventListener('click', closeModal );
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !modal.classList.contains('hidden'))  closeModal()
 });
+
