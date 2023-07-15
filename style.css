@@ -484,3 +484,16 @@
   margin-bottom: 5rem;
   filter: brightness(110%) contrast(50%) saturate(110%) ;
 }
+
+
+.gitlogo{
+  width: 6rem;
+  margin-left: 3rem;
+  mix-blend-mode:luminosity;
+  border-radius: 100%;
+}
+.linklogo{
+  width: 6rem;
+  margin-left: 3rem;
+  filter: contrast(75%) brightness(110%);
+}
