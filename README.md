@@ -1,7 +1,11 @@
 # html-ecomm
 A simple HTML and JavaScript based ecomm website's about us page
 
-> Features : Modal Wondow login page, Slider with product tabs, ....
+> Features :
+> - Modal Wondow login page
+> - Slider with product tabs
+> - Lazy loading 
+> -  more....
 
 SITE :=>> https://html-ecomm.netlify.app/
 
